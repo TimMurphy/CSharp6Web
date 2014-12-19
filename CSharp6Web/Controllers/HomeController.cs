@@ -8,10 +8,12 @@ namespace CSharp6Web.Controllers
 {
     public class HomeController : Controller
     {
+        public string Name { get; } = "value";
+
         public ActionResult Index()
         {
             string str = null;
-            var length = str?.Length;
+            var length = str?.Substring(5)?.ToUpper();
             return View();
         }
 
@@ -29,4 +31,5 @@ namespace CSharp6Web.Controllers
             return View();
         }
     }
+
 }
