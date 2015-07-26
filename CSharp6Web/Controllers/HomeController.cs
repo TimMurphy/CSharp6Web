@@ -12,7 +12,8 @@ namespace CSharp6Web.Controllers
 
         public ActionResult Index()
         {
-            string str = null;
+            // C# 6.0 features.
+            string str = $"{Name}";
             var length = str?.Substring(5)?.ToUpper();
             return View();
         }
